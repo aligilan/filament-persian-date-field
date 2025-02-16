@@ -24,6 +24,8 @@ class PersianDatePicker extends Field
     protected bool | Closure $isWithoutDate = false;
     protected string | Closure $viewMode = 'day';
 
+    protected string $timezone = 'Asia/Tehran';
+
     protected function setUp(): void
     {
         parent::setUp();
@@ -37,7 +39,7 @@ class PersianDatePicker extends Field
                 $state = Carbon::parse($state);
             }
 
-            $state->setTimezone(config('app.timezone'));
+            $state->setTimezone($this->timezone);
             $state = $state->format($component->getFormat());
 
             $component->state($state);
@@ -60,6 +62,13 @@ class PersianDatePicker extends Field
         $this->rule(
             'date',
         );
+    }
+
+    public function timezone(string $zone)
+    {
+        $this->timezone = $zone;
+
+        return $this;
     }
 
     public function maxDate(CarbonInterface|string|Closure|null $date, $acceptEqual = true): static
