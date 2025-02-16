@@ -10,7 +10,7 @@
 You can install the package via composer:
 
 ```bash
-composer require shalior/filament-persian-date-field
+composer require aligilan/filament-persian-date-field
 ```
 
 **_To use with filament v2 use version ^1_**
