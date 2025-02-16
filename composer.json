@@ -1,12 +1,12 @@
 {
-    "name": "shalior/filament-persian-date-field",
+    "name": "aligilan/filament-persian-date-field",
     "description": "A FilamentPhp form field to pick persian dates",
     "keywords": [
         "shalior",
         "laravel",
         "filament-persian-date-field"
     ],
-    "homepage": "https://github.com/shalior/filament-persian-date-field",
+    "homepage": "https://github.com/aligilan/filament-persian-date-field",
     "license": "MIT",
     "authors": [
         {
