@@ -20,7 +20,7 @@
         "spatie/laravel-package-tools": "^1.19",
         "filament/forms": "^3.2",
         "filament/tables": "^3.2",
-        "illuminate/contracts": "^10.45"
+        "illuminate/contracts": ">=10.0"
     },
     "require-dev": {
         "nunomaduro/collision": "^6.0",
