@@ -39,7 +39,7 @@ class PersianDatePicker extends Field
                 $state = Carbon::parse($state);
             }
 
-            $state->setTimezone($this->timezone);
+            $state->setTimezone($component->timezone);
             $state = $state->format($component->getFormat());
 
             $component->state($state);
